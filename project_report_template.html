@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="project_report.css"/>
+    <!-- Plotly JS plugin -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div class="card">
+    <h2>Project Monitoring - Bar Chart</h2>
+    {{ fig_prog }}
+    {{ fig_late }}
+</div>
+<div class="card">
+    <p style="page-break-before: always" ></p>
+    <h2>Project Monitoring - S-Curve</h2>
+    {{ sc_project1 }}
+    {{ sc_project2 }}
+    <p style="page-break-before: always" ></p>
+    {{ sc_project3 }}
+    {{ sc_project4 }}
+</div>
+<div class="card">
+    <p style="page-break-before: always" ></p>
+    <h2>Project Monitoring - Late Deliverable List</h2>
+    {{ df_late_list }}
+</div>
+</body>
+</html>
